@@ -1,5 +1,10 @@
 <?php
-$mahasiswa = ["Adam Jon", "092929220220", "IT", "AdamJon@gmail.com"];
+$mahasiswa = [
+
+    ["Adam Jon", "092929220220", "IT", "AdamJon@gmail.com"],
+    ["Lewi Jon", "092929220220", "IT", "LewisJon@gmail.com"]
+
+];
 
 ?>
 
@@ -17,14 +22,20 @@ $mahasiswa = ["Adam Jon", "092929220220", "IT", "AdamJon@gmail.com"];
 
     <h1>Students Registration</h1>
 
-    <ul>
-        <?php foreach ($mahasiswa as $m) : ?>
+    <?php foreach ($mahasiswa as $m) : ?>
+        <ul>
+            <!-- <?php foreach ($mahasiswa as $m) : ?>
             <li><?php echo $m; ?></li>
-        <?php endforeach; ?>
+        <?php endforeach; ?> -->
+
+            <li>Name :<?= $m[0]; ?></li>
+            <li> Matrix No :<?= $m[1]; ?></li>
+            <li>Major :<?= $m[2]; ?></li>
+            <li> Email :<?= $m[3]; ?></li>
 
 
-    </ul>
-
+        </ul>
+    <?php endforeach; ?>
 </body>
 
 </html>

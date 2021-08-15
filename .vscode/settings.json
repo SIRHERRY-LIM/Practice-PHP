@@ -1,4 +1,7 @@
 {
     "workbench.preferredDarkColorTheme": "Default High Contrast",
-    "workbench.colorTheme": "Default High Contrast"
+    "workbench.colorTheme": "Default High Contrast",
+    "kite.codefinder.enableLineDecoration": true,
+    "kite.developerMode": true,
+    "kite.enableOptionalCompletionsTriggers": true
 }
